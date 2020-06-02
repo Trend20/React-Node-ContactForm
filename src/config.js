@@ -34,3 +34,28 @@ router.post('/send', (req,res,next) =>{
     const message = req.body.message
     const content = `name: ${name} \n email: ${email} \n message: ${message}`
 });
+
+var mail = {
+    from: name,
+    to: 'RECEIVING_EMAIL_ADDRESS_GOES_HERE',  
+    subject: 'New Message from Contact Form',
+    text: content
+  }
+
+  transporter.sendMail(mail, (err, data) => {
+    if (err) {
+      res.json({
+        status: 'fail'
+      })
+    } else {
+      res.json({
+       status: 'success'
+      })
+    }
+  })
+
+const app = express()
+app.use(cors())
+app.use(express.json())
+app.use('/', router)
+app.listen(3002)
