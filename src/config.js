@@ -11,5 +11,10 @@ const creds = require('./config');
 
 
 let transport = {
-    
+    host: 'smtp.example.com',
+    port:587,
+    auth:{
+        user: creds.USER,
+        pass: creds.PASS,
+    }
 }
