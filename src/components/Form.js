@@ -10,6 +10,14 @@ class Form extends Component {
                         <label for="name">Name</label>
                         <input type="text" placeholder="Enter name" />
                     </div>
+                    <div className="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter name" />
+                    </div>
+                    <div className="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter name" />
+                    </div>
                 </form>
             </div>
         );
