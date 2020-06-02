@@ -21,6 +21,12 @@ class Form extends Component {
             email: event.target.value,
         });
     }
+
+    onMessageChange(event){
+        this.setState({
+            message: event.target.value,
+        });
+    }
     render() { 
         return (
             <div className="container">
