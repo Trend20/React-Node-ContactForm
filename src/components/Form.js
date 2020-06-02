@@ -36,6 +36,7 @@ class Form extends Component {
                         value={this.state.message}
                         onChange={this.onMessageChange.bind(this)} />
                     </div>
+                    <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
         );
