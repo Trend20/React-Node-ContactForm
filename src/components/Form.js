@@ -32,7 +32,9 @@ class Form extends Component {
                         <input 
                         type="text" 
                         placeholder="Message"
-                        className="form-control" />
+                        rows="5"
+                        className="form-control"
+                        value={this.state.message} />
                     </div>
                 </form>
             </div>
