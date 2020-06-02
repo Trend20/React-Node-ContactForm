@@ -11,7 +11,7 @@ class Form extends Component {
                         <input type="text" placeholder="Enter name" />
                     </div>
                     <div className="form-group">
-                        <label for="name">Name</label>
+                        <label for="email">Email</label>
                         <input type="text" placeholder="Enter name" />
                     </div>
                     <div className="form-group">
