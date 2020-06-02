@@ -7,13 +7,15 @@ class Form extends Component {
             <div className="container">
                 <form id="contact-form" 
                 method="POST"
-                onSubmit={this.handleSubmit}>
+                onSubmit={this.handleSubmit.bind(this)}>
                     <div className="form-group">
                         <label for="name">Name</label>
                         <input 
                         type="text" 
                         placeholder="Enter name"
-                        className="form-control" />
+                        className="form-control"
+                        value={this.state.name}
+                        onChange={this.onNameChange.bind(this)} />
                     </div>
                     <div className="form-group">
                         <label for="email">Email</label>
