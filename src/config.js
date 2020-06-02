@@ -14,7 +14,14 @@ let transport = {
     host: 'smtp.example.com',
     port:587,
     auth:{
-        user: creds.USER,
+        user: creds.USER, 
         pass: creds.PASS,
     }
 }
+
+let transporter = nodemailer.createTransport(transport);
+transporter.verify((error,success) =>{
+    if(error){
+        console.log(error);
+    }
+})
