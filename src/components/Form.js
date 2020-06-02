@@ -12,11 +12,11 @@ class Form extends Component {
                     </div>
                     <div className="form-group">
                         <label for="email">Email</label>
-                        <input type="text" placeholder="Enter name" />
+                        <input type="email" placeholder="Enter Email" />
                     </div>
                     <div className="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" placeholder="Enter name" />
+                        <label for="message">Message</label>
+                        <input type="text" placeholder="Message" />
                     </div>
                 </form>
             </div>
