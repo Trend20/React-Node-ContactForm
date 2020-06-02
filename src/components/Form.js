@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
  
 class Form extends Component {
     constructor(props){
@@ -26,6 +26,9 @@ class Form extends Component {
         this.setState({
             message: event.target.value,
         });
+    }
+    handleSubmit(event){
+        event.preventDefault();
     }
     render() { 
         return (
