@@ -34,7 +34,8 @@ class Form extends Component {
                         placeholder="Message"
                         rows="5"
                         className="form-control"
-                        value={this.state.message} />
+                        value={this.state.message}
+                        onChange={this.onMessageChange.bind(this)} />
                     </div>
                 </form>
             </div>
