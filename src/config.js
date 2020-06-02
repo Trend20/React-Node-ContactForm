@@ -30,4 +30,7 @@ transporter.verify((error,success) =>{
 
 router.post('/send', (req,res,next) =>{
     const name = req.body.name
-})
+    const email = req.body.email
+    const message = req.body.message
+    const content = `name: ${name} \n email: ${email} \n message: ${message}`
+});
