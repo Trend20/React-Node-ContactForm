@@ -29,8 +29,7 @@ class Form extends Component {
                     </div>
                     <div className="form-group">
                         <label for="message">Message</label>
-                        <input 
-                        type="text" 
+                        <textarea
                         placeholder="Message"
                         rows="5"
                         className="form-control"
