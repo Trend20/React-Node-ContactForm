@@ -22,7 +22,10 @@ class Form extends Component {
                         <input 
                         type="email" 
                         placeholder="Enter Email"
-                        className="form-control" />
+                        className="form-control" 
+                        value={this.state.email}
+                        onChange={this.onEmailChange.bind(this)}
+                        />
                     </div>
                     <div className="form-group">
                         <label for="message">Message</label>
