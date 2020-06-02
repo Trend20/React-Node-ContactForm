@@ -5,7 +5,9 @@ class Form extends Component {
     render() { 
         return (
             <div className="container">
-                <form id="contact-form" method="POST">
+                <form id="contact-form" 
+                method="POST"
+                onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label for="name">Name</label>
                         <input 
