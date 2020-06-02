@@ -10,6 +10,11 @@ class Form extends Component {
             message:'',
         }
     }
+    onNameChange(event){
+        this.setState({
+            name: event.target.value,
+        });
+    }
     render() { 
         return (
             <div className="container">
