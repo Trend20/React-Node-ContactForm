@@ -30,6 +30,19 @@ class Form extends Component {
     }
     handleSubmit(event){
         event.preventDefault();
+
+        axios({
+            method: 'POST',
+            url: 'http://localhost:3002/send',
+            data: 'this.state',
+        }).then((response) =>{
+            if(response.data.status === 'success'){
+                alert('Message sent');
+                this.resetForm();
+            }else if(response.data.status === 'fail'){
+                alert('Message failed to send');
+            }
+        })
     }
     render() { 
         return (
