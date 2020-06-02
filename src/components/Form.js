@@ -44,6 +44,13 @@ class Form extends Component {
             }
         })
     }
+    resetForm(){
+        this.setState({
+            name:'',
+            email:'',
+            message:'',
+        });
+    }
     render() { 
         return (
             <div className="container">
